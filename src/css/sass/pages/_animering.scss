@@ -1,0 +1,61 @@
+@use '/src/css/sass/abstracts/variables' as *;
+
+#textanimation{
+    height: 200px;
+    width: 400px;
+    background-color: aquamarine;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    animation: blink 3s 3; //Blinkar 3 sek * 3 gånger
+
+    p{
+        font-size: 1.4rem;
+    }
+}
+
+#spinme:hover{
+    animation: spin 5s linear infinite;
+}
+
+#one, #two, #three{
+    font-family: 'Bungee Tint';
+    font-size: 40px;
+    opacity: 0;
+}
+
+#three {
+    animation: countdown 2s 1;
+    animation-fill-mode: forwards;
+}
+
+#two {
+    animation: countdown 2s 1;
+    animation-delay: 2s;
+    animation-fill-mode: forwards;
+}
+
+#one {
+    animation: countdown 2s 1;
+    animation-delay: 4s;
+    animation-fill-mode: forwards;
+}
+
+#rocket {
+    width: 200px;
+    height: auto;
+    opacity: 0;
+    position: absolute;
+    animation: show 10s, launch 10s;
+    animation-delay: 5s;
+}
+
+#magnify {
+    width: 300px;
+    height: auto;
+    transition: transform 0.3s ease;
+}
+
+#magnify:hover{
+    transform: scale(2);
+}
