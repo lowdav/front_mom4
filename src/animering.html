@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Moment 3</title>
+    <title>Moment 4</title>
     <link id="themestyle" rel="stylesheet" href="css/style.scss">
     <script type="module" src="js/main.js"></script>
 <body>
@@ -38,13 +38,16 @@
             <button>Jag snurrar vid hover</button>
         </div>
         <div>
-            <p>Rocket launch... ladda om sidan för ny uppskjutning.</p>
+            <button id="relaunch" onclick="location.reload();">Klicka för ny uppskjutning</button>
             <span id="three">3...</span><span id="two">2...</span><span id="one">1...</span>
             <img id="rocket" src="img/rocket.svg" alt="Raket">
         </div>
         <div>
-            <p>Hoovra med musen för förstoring av bilden</p>
+            <p>Hovra med musen för förstoring av bilden</p>
             <img id="magnify" src="img/magnify.png" alt="Dator i förstoringsglas">
+        </div>
+        <div>
+            <button id="crazy">Experimentknapp</button>
         </div>
     </div>
     </main>
