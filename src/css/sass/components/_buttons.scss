@@ -1,0 +1,27 @@
+//Testar mixin för att skapa en knapp
+
+@use '/src/css/sass/abstracts/variables' as *;
+
+@mixin button($bgcolor, $textcolor) {
+    padding: 12px 24px;
+    background-color: $bgcolor;
+    color: $textcolor;
+    border-radius: 5px;
+    border: 4px solid complement($bgcolor);
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1rem;
+
+
+    @if ($textcolor == white) {
+        font-size: 1.3rem;
+        font-weight: 500;
+    } @else {
+        font-weight: 500;
+    }
+}
+
+button{
+    @include button($bgcolor: $buttoncolor, $textcolor: white);
+    display: block;
+    margin: auto;
+}

@@ -1,0 +1,30 @@
+@use '/src/css/sass/abstracts/variables' as *;
+
+//Huvudsaklig layout, ser till att main tar upp allt ledigt utrymme
+html, body{
+    height: 100%;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+header, main, footer{
+    padding: 0 20px;
+}
+
+header {
+    background-color: $hfbkgcolor;
+}
+
+main{
+    background-color: $mainbkgcolor;
+    flex: 1;
+}
+
+footer{
+    background-color: $hfbkgcolor;
+}

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Moment 3</title>
+    <link id="themestyle" rel="stylesheet" href="css/style.scss">
+    <script type="module" src="js/main.js"></script>
+</head>
+<body>
+    <header>
+        <div class="toprow">
+            <p id="logo">Frontend</p>
+            <!-- Hamburger menu button -->
+            <div class="burger" id="burger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+        <!-- Navigation menu -->
+        <nav id="nav" class="hidden">
+            <ul class="links">
+                <li><a href="index.html">HOME</a></li>
+                <li><a href="sass.html">SASS</a></li>
+                <li><a href="#">#</a></li>
+                <li><a href="#">#</a></li>
+                <li><a href="#">#</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <div class="bigcard">
+        <h1>Moment 3</h1>
+        <p>I brist på ideer bjuder jag här på en bild av Brooklyn Bridge.</p>
+        <p>Brooklyn Bridge, en av New Yorks mest ikoniska sevärdheter, invigdes den 24 maj 1883 och förbinder Manhattan med Brooklyn över East River.Bygget påbörjades 1869 och leddes av ingenjören John A. Roebling, men efter hans död tog sonen Washington Roebling över projektet.</p> 
+        <p>Konstruktionen var revolutionerande för sin tid och var världens längsta hängbro vid invigningen, med en längd på 486 meter mellan pylonerna. Bygget präglades av utmaningar, inklusive arbetsolyckor och sjukdomar bland arbetarna som arbetade i de trycksatta kassunerna under vattnet. Trots detta blev bron en symbol för ingenjörskonst och amerikansk framåtanda. </p>
+        <p>Idag är Brooklyn Bridge både en viktig trafikled och en populär turistattraktion, känd för sin imponerande arkitektur och fantastiska utsikt över New Yorks skyline.</p>
+        <p>Källa: ChatGPT</p>
+        <button>För mer webbrelaterat innehåll - gå till SASS i menyn</button>
+        <picture>
+            <source srcset="/src/img/brooklyn.jpeg?as=avif&width=500" type="image/avif" />
+            <source srcset="/src/img/brooklyn.jpeg?as=webp&width=500" type="image/webp" />
+            <source srcset="/src/img/brooklyn.jpeg" type="image/jpeg" />
+            <img src="/src/img/brooklyn.jpeg" alt="Coding" />
+          </picture>
+        </div>
+        </main>
+    <footer>
+        <p>DT211G VT25 Frontend-baserad webbutveckling. Dalo2101.</p>
+    </footer>
+</body>
+</html>
